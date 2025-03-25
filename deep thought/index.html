@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <span class="black-text">DEEP</span>
+            <span class="blue-text">THOUGHT</span>
+        </div>
+        <div class="nav-icons">
+            <div class="icon"><i class="fas fa-home"></i></div>
+            <div class="icon"><i class="fas fa-bell"></i></div>
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>Journey Board</h2>
+            <button id="toggle-btn">
+                <img src="arr3.png" alt="Toggle Sidebar" />
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <ul>
+                <li>Topic 1</li>
+                <li>Topic 2</li>
+                <li>Topic 3</li>
+                <li>Topic 4</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="top-section">
+            <h2>Technical Project Management</h2>
+            <button class="action-btn">Button</button>
+        </div>
+
+        <div class="info-box">
+            <h3>Information Box</h3>
+            <p>This is a description about technical project management. It provides insights into managing tasks efficiently.</p>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="grid-header">Video</div>
+                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                <hr>
+                <p>Watch this video to understand the basics of technical project management.</p>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-header">Text Box</div>
+                <textarea placeholder="Enter your text here..."></textarea>
+                <hr>
+                <p>Write your notes here.</p>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-header">Comments</div>
+                <textarea placeholder="Leave a comment..."></textarea>
+                <hr>
+                <p>Share your thoughts about the topic.</p>
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-header">Examples</div>
+                <h4>Example 1</h4>
+                <p>This example demonstrates how project management works in real life.</p>
+                <hr>
+                <h4>Example 2</h4>
+                <p>Understanding agile methodologies through real-world applications.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("toggle-btn").addEventListener("click", function () {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.classList.toggle("collapsed");
+        });
+    </script>
+
+</body>
+</html>
